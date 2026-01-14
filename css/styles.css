@@ -62,6 +62,11 @@
     font-weight: 700;
 }
 
+.title-sm {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 /* header */
 header {
     background-color: rgba(255, 144, 14, 0.1);
@@ -164,9 +169,26 @@ nav ul li a {
     padding: 30px;
 }
 
-.card h4 {
-    font-size: 20px;
-    font-weight: 600;
+/* facts section */
+.facts-section {
+    padding: 85px 30px;
+}
+
+.facts-heading {
+    max-width: 540px;
+}
+
+.facts-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.fact-card {
+    border: 1px solid rgba(255, 144, 14, 1);
+    padding: 45px 30px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 /* responsive: small device */
@@ -219,6 +241,10 @@ nav ul li a {
 
     .feature-image-container img {
         width: 100%;
+    }
+
+    .facts-card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -277,5 +303,9 @@ nav ul li a {
 
     .feature-image-container img {
         width: 100%;
+    }
+
+    .facts-card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
